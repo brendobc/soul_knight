@@ -40,9 +40,8 @@
         position: -webkit-sticky;
         position: sticky;
         top: 70px;
-        height: 400px;
+        height: 300px;
         overflow-y: auto;
-        background-color: #6c757d;
     }
     </style>
 
@@ -78,7 +77,10 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#textEstatuas">Sobre</a>
                   <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#tituloEstatuaBerserker">Berserker</a>
+                  <a class="dropdown-item" href="#tituloEstatuaEngenheiro">Engenheiro</a>
                   <a class="dropdown-item" href="#tituloEstatuaFeiticeiro">Feiticeiro</a>
+                  <a class="dropdown-item" href="#tituloEstatuaPaladino">Paladino</a>
                 </div>
               </li>
               <li class="nav-item font-weight-bold text-uppercase">
@@ -91,17 +93,21 @@
     </header>
 
     <!-- Texto "home" -->
-    <div class="container d-flex justify-content-center w-100 mb-5 mt-5" id="textHome">
+    <div class="container d-flex justify-content-center w-100 mt-5" id="textHome">
       <div class="row mt-5">
         <div class="col-md-12">
-          <h2 class="font-weight-bold text-uppercase">Home</h2>
+          <div class="jumbotron jumbotron-fluid bg-transparent mb-0">
+            <div class="container">
+              <h1 class="display-4">Home</h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- Fim do texto "home" -->
     
     <!-- Texto introdutório do site -->
-    <div class="container d-flex justify-content-center w-100 mb-5">
+    <div class="container d-flex justify-content-center w-100 mt-0 mb-5">
       <div class="row">
         <div class="col-md-12 ">
           <p class="text-justify">
@@ -120,22 +126,40 @@
     <!-- Fim do parallax -->
 
     <!-- Título "personagens" -->
-    <div class="container-fluid d-flex justify-content-center w-100 pt-5 pb-0 mb-0" id="textPersonagens">
+    <div class="container-fluid d-flex justify-content-center w-100 pt-0 pb-0 mb-0" id="textPersonagens">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="font-weight-bold text-uppercase">Personagens</h2>
+          <div class="jumbotron jumbotron-fluid bg-transparent mb-0 mt-0">
+            <div class="container">
+              <div class="d-flex justify-content-center mb-3">
+                <h1 class="display-4">Personagens</h1>
+              </div>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis quibusdam fuga suscipit quaerat molestias qui delectus officia vero dolorem, error voluptatum pariatur assumenda ratione dignissimos fugit velit blanditiis. Explicabo.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- Fim do título "personagens" -->
 
     <!-- Seção "Personagens" -->
-    <div class="container-fluid d-flex justify-content-end w-100 mb-5 mt-5">
+    <div class="container-fluid d-flex justify-content-end w-100 mb-5 mt-0">
       <div class="row">
         <!-- Menu "grudento" -->
         <div class="col-md-3 pl-5 pt-5 pb-5">
-          <div class="container sticker pt-3">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni minus a odio, assumenda exercitationem. Harum consequuntur molestiae facilis sit iure, nemo ea qui? Laudantium pariatur quaerat minima ipsa facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium suscipit nesciunt vel quae iure blanditiis ipsa consectetur odit eveniet totam, deserunt eius nulla ipsam nostrum earum quibusdam quas dolores! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <div class="container sticker pt-3 pb-3 pr-0 pl-0 font-weight-bold">
+            <div class="list-group">
+              <a href="#textPersonagens" class="list-group-item list-group-item-action border border-dark border-bottom-0">Personagens</a>
+            
+              <ul class="list-group border border-dark rounded-bottom p-0">
+                <li class="list-group-item mr-0 ml-0 pl-0 pr-0 pb-0 pt-0 border rounded-bottom">
+                  <a href="#tituloBonzo" class="list-group-item list-group-item-action list-group-item-info">Bonzo</a>
+                  <a href="#tituloCavaleiro" class="list-group-item list-group-item-action list-group-item-info">Cavaleiro</a>
+                  <a href="#tituloDruida" class="list-group-item list-group-item-action list-group-item-info">Druida</a>
+                  <a href="#tituloGuarda" class="list-group-item list-group-item-action list-group-item-info">Guarda</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <!-- Fim do menu "grudento" -->
@@ -271,10 +295,17 @@
     <!-- Fim da seção "Personagens" -->
 
     <!-- Título "Estátuas" -->
-    <div class="container-fluid d-flex justify-content-center w-100 pt-5 pb-0 mb-0" id="textEstatuas">
+    <div class="container-fluid d-flex justify-content-center w-100 pt-5 pb-0 mb-0 mt-0" id="textEstatuas">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="font-weight-bold text-uppercase">Estátuas</h2>
+          <div class="jumbotron jumbotron-fluid bg-transparent mb-0 mt-0 pt-0 pb-0">
+            <div class="container">
+              <div class="d-flex justify-content-center mb-3">
+                <h1 class="display-4">Estátuas</h1>
+              </div>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis quibusdam fuga suscipit quaerat molestias qui delectus officia vero dolorem, error voluptatum pariatur assumenda ratione dignissimos fugit velit blanditiis. Explicabo.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -284,16 +315,79 @@
     <div class="container-fluid d-flex justify-content-end w-100 mb-5 mt-5">
       <div class="row">
         <div class="col-md-9 pl-5 pt-5">
-          <!-- Informações - Estátua feiticeiro -->
-          <div class="container pt-5" id="tituloEstatuaFeiticeiro">
-            <!-- Imagem Estátua feiticeiro -->
-            <div style="content: url(https://i.imgur.com/DSSTmQs.png); float: left; alt: 'Foto Estátua feiticeiro'; width: 130px; margin-left: 3rem; margin-right: 3rem;"></div>
-            <!-- Título Estátua feiticeiro -->
-            <h3 class="text-center mb-5">Estátua Feiticeiro</h3>
-            <!-- Resumo Estátua feiticeiro -->
+          
+          <!-- Informações - Estátua Berserker -->
+          <div class="container pt-5" id="tituloEstatuaBerserker">
+            <!-- Imagem Estátua Berserker -->
+            <div style="content: url(https://i.imgur.com/CLRJSHM.png); float: left; alt: 'Foto Estátua Berserker'; width: 130px; margin-left: 3rem; margin-right: 3rem;"></div>
+            <!-- Título Estátua Berserker -->
+            <h3 class="text-center mb-5">Estátua Berserker</h3>
+            <!-- Resumo Estátua Berserker -->
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, nihil velit a incidunt id consectetur dolor delectus quae est labore facilis? Animi quidem deleniti, officia cum tempora eos harum qui? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
-            <!-- Collapse com botão "ver detalhes" - Estátua feiticeiro -->
+            <!-- Collapse com botão "ver detalhes" - Estátua Berserker -->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="collapse multi-collapse" id="detalhesEstatuaBerserker">
+                    <div class="card card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <p>
+                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#detalhesEstatuaBerserker" aria-expanded="false" aria-controls="detalhesEstatuaBerserker">Ver detalhes</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fim das informações Estátua Berserker -->
+
+          <hr class="pb-0 mb-0">
+
+          <!-- Informações - Estátua Engenheiro -->
+          <div class="container pt-5" id="tituloEstatuaEngenheiro">
+            <!-- Imagem Estátua Engenheiro -->
+            <div style="content: url(https://i.imgur.com/AdiDiec.png); float: left; alt: 'Foto Estátua Engenheiro'; width: 130px; margin-left: 3rem; margin-right: 3rem;"></div>
+            <!-- Título Estátua Engenheiro -->
+            <h3 class="text-center mb-5">Estátua Engenheiro</h3>
+            <!-- Resumo Estátua Engenheiro -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, nihil velit a incidunt id consectetur dolor delectus quae est labore facilis? Animi quidem deleniti, officia cum tempora eos harum qui? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+            <!-- Collapse com botão "ver detalhes" - Estátua Engenheiro -->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="collapse multi-collapse" id="detalhesEstatuaEngenheiro">
+                    <div class="card card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <p>
+                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#detalhesEstatuaEngenheiro" aria-expanded="false" aria-controls="detalhesEstatuaEngenheiro">Ver detalhes</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fim das informações Estátua Engenheiro -->
+
+          <hr class="pb-0 mb-0">
+
+          <!-- Informações - Estátua Feiticeiro -->
+          <div class="container pt-5" id="tituloEstatuaFeiticeiro">
+            <!-- Imagem Estátua Feiticeiro -->
+            <div style="content: url(https://i.imgur.com/DSSTmQs.png); float: left; alt: 'Foto Estátua Feiticeiro'; width: 130px; margin-left: 3rem; margin-right: 3rem;"></div>
+            <!-- Título Estátua Feiticeiro -->
+            <h3 class="text-center mb-5">Estátua Feiticeiro</h3>
+            <!-- Resumo Estátua Feiticeiro -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, nihil velit a incidunt id consectetur dolor delectus quae est labore facilis? Animi quidem deleniti, officia cum tempora eos harum qui? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+            <!-- Collapse com botão "ver detalhes" - Estátua Feiticeiro -->
             <div class="container">
               <div class="row">
                 <div class="col-md-10">
@@ -311,14 +405,58 @@
               </div>
             </div>
           </div>
-          <!-- Fim das informações Estátua feiticeiro -->
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium suscipit nesciunt vel quae iure blanditiis ipsa consectetur odit eveniet totam, deserunt eius nulla ipsam nostrum earum quibusdam quas dolores! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, placeat! Odit, corrupti. Beatae qui culpa asperiores nihil ipsum magnam praesentium, inventore alias quod nobis omnis veniam sed aliquam reprehenderit iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem minus quidem in? Accusamus eligendi architecto atque, pariatur quo velit nesciunt et fugit ipsa! Nisi modi dolore qui? Saepe, inventore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quasi dolorem earum doloremque eaque quos veniam aut, totam nemo iste omnis dolore itaque quas officia id tempora. Error, id a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis fugit error non dolor! Autem rem itaque tempora illum ipsa totam doloremque numquam laudantium voluptatum qui eum ipsam commodi, voluptas eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque placeat explicabo mollitia consectetur, accusantium dicta eligendi eos asperiores vel officiis cupiditate quod vero dolore ipsam soluta odit officia? Quisquam, quidem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quasi corporis, totam doloribus suscipit labore cupiditate culpa veniam sunt, perferendis, fuga molestias! Ad quibusdam suscipit, cum maxime dolorem facere molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium suscipit nesciunt vel quae iure blanditiis ipsa consectetur odit eveniet totam, deserunt eius nulla ipsam nostrum earum quibusdam quas dolores! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, placeat!
+          <!-- Fim das informações Estátua Feiticeiro -->
+
+          <hr class="pb-0 mb-0">
+
+          <!-- Informações - Estátua Paladino -->
+          <div class="container pt-5" id="tituloEstatuaPaladino">
+            <!-- Imagem Estátua Paladino -->
+            <div style="content: url(https://i.imgur.com/uiyXKhI.png); float: left; alt: 'Foto Estátua Paladino'; width: 130px; margin-left: 3rem; margin-right: 3rem;"></div>
+            <!-- Título Estátua Paladino -->
+            <h3 class="text-center mb-5">Estátua Paladino</h3>
+            <!-- Resumo Estátua Paladino -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, nihil velit a incidunt id consectetur dolor delectus quae est labore facilis? Animi quidem deleniti, officia cum tempora eos harum qui? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+            <!-- Collapse com botão "ver detalhes" - Estátua Paladino -->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="collapse multi-collapse" id="detalhesEstatuaPaladino">
+                    <div class="card card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <p>
+                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#detalhesEstatuaPaladino" aria-expanded="false" aria-controls="detalhesEstatuaPaladino">Ver detalhes</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fim das informações Estátua Paladino -->
+
+          <hr class="pb-0 mb-0">
+          
         </div>
 
         <!-- Menu "grudento" -->
-        <div class="col-md-3 pl-5 pt-5 pb-5">
-          <div class="container sticker pt-3">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni minus a odio, assumenda exercitationem. Harum consequuntur molestiae facilis sit iure, nemo ea qui? Laudantium pariatur quaerat minima ipsa facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium suscipit nesciunt vel quae iure blanditiis ipsa consectetur odit eveniet totam, deserunt eius nulla ipsam nostrum earum quibusdam quas dolores! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        <div class="col-md-3 pr -5 pt-5 pb-5">
+          <div class="container sticker pt-3 pb-3 pr-0 pl-0 font-weight-bold">
+            <div class="list-group">
+              <a href="#textEstatuas" class="list-group-item list-group-item-action border border-dark border-bottom-0">Estátuas</a>
+            
+              <ul class="list-group border border-dark rounded-bottom p-0">
+                <li class="list-group-item mr-0 ml-0 pl-0 pr-0 pb-0 pt-0 border rounded-bottom">
+                  <a href="#tituloEstatuaBerserker" class="list-group-item list-group-item-action list-group-item-info">Berserker</a>
+                  <a href="#tituloEstatuaEngenheiro" class="list-group-item list-group-item-action list-group-item-info">Engenheiro</a>
+                  <a href="#tituloEstatuaFeiticeiro" class="list-group-item list-group-item-action list-group-item-info">Feiticeiro</a>
+                  <a href="#tituloEstatuaPaladino" class="list-group-item list-group-item-action list-group-item-info">Paladino</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <!-- Fim do menu "grudento" -->
