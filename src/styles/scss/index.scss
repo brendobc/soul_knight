@@ -1,6 +1,6 @@
 @import './reset.scss';
 
-@import 'variables/spacing.scss';
+@import 'variables/index.scss';
 @import 'utils/index.scss';
 
 @import 'components/index.scss';
@@ -37,6 +37,11 @@ main {
     
     .parallax-personagens {
         @include parallax('https://i.imgur.com/qs8raPi.jpg', 400px);
+    }
+
+    .content {
+        max-width: 90%;
+        margin: 0 auto;
     }
 }
 

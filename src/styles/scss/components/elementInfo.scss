@@ -1,0 +1,31 @@
+.element-info {
+    position: relative;
+
+    img.element-picture {
+        width: 115px;
+        margin: 0 $spacing-4;
+        float: left;
+    }
+
+    .element-title {
+        font-size: 28px;
+        font-weight: $fontWeight_bold;
+        text-align: center;
+        margin-bottom: $spacing-6;
+    }
+}
+
+.element-info-list .element-info + .element-info {
+    margin-top: $spacing-6;
+    padding-top: $spacing-6;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        height: 1px;
+        width: 100%;
+        background-color: #c1c2c3;
+    }
+}
