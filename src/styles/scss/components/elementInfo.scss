@@ -5,6 +5,7 @@
         width: 115px;
         margin: 0 $spacing-4;
         float: left;
+        margin-bottom: $spacing-6;
     }
 
     .element-title {
@@ -18,6 +19,7 @@
 .element-info-list .element-info + .element-info {
     margin-top: $spacing-6;
     padding-top: $spacing-6;
+    clear: left;
 
     &::before {
         content: "";

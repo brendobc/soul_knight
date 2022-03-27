@@ -1,0 +1,77 @@
+main {
+    margin-top: 55px;
+
+    .main-title {
+        padding: 60px 0;
+
+        h1, h2, h3 {
+            font-size: 48px;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+
+    .main-text {
+        margin: 0 auto;
+        max-width: 75vw;
+
+        p {
+            color: #393c40;
+            font-size: 20px;
+            line-height: 1.5;
+            text-align: justify;
+
+            &:not(:last-child) {
+                margin-bottom: $spacing-4;
+            }
+        }
+    }
+    
+    .parallax {
+        &-personagens {
+            @include parallax('../../../assets/images/parallaxes/all-characters-parallax.jpg', 400px);
+        }
+
+        &-paladin-wizard {
+            @include parallax('../../../assets/images/parallaxes/paladin-wizard-parallax.jpg', fit-content);
+        }
+    }
+
+    .content {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    background-color: #1a2e37;
+    padding: $spacing-1 0;
+
+    .social-media-contact {
+        display: flex;
+        gap: $spacing-3;
+        justify-content: center;
+
+        #imgGithub, #imgLinkedIn {
+            width: 40px;
+
+            path {
+                fill: #fdfdfd;
+            }
+        }
+
+        #imgGithub:hover path {
+            fill: #838383;
+        }
+
+        #imgLinkedIn:hover path {
+            fill: #6563ff;
+        }
+    }
+
+    .page-owner-name {
+        text-align: center;
+        color: #fdfdfd;
+        font-size: 16px;
+    }
+}

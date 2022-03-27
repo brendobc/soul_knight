@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/styles/css/index.css">
+    <script src="js/index.js" defer type="module"></script>
 
     <title>Soul Knight</title>
 </head>
@@ -17,20 +18,20 @@
 <body>
     <header>
         <nav class="navbar">
-            <a>
-                <img class="nav-heading" src="https://i.imgur.com/7GuaMgX.png">
+            <a class="js-scroll" data-scroll="intro-section">
+                <img class="nav-heading" src="./assets/images/sk-logo.png">
             </a>
 
             <ul class="nav-list">
-                <li class="nav-item">
+                <li class="nav-item js-scroll" data-scroll="characters-section">
                     <a>Characters</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item js-scroll" data-scroll="statues-section">
                     <a>Statues</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item js-scroll" data-scroll="buffs-section">
                     <a>Buffs</a>
                 </li>
             </ul>
@@ -76,22 +77,22 @@
                 <div class="col-3 mr-5">
 
                     <nav class="floating-nav">
-                        <h2 class="nav-heading">Characters</h2>
+                        <h2 class="nav-heading js-scroll" data-scroll="characters-section">Characters</h2>
 
                         <ul class="nav-list">
-                            <li class="nav-item">
+                            <li class="nav-item js-scroll" data-scroll="druid-info">
                                 <a>Druid</a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item js-scroll" data-scroll="knight-info">
                                 <a>Knight</a>
                             </li>
                             
-                            <li class="nav-item">
+                            <li class="nav-item js-scroll" data-scroll="rogue-info">
                                 <a>Rogue</a>
                             </li>
                             
-                            <li class="nav-item">
+                            <li class="nav-item js-scroll" data-scroll="wizard-info">
                                 <a>Wizard</a>
                             </li>
                         </ul>
@@ -101,8 +102,8 @@
 
                 <div class="col-9">
                     <div class="element-info-list">
-                        <div class="element-info">
-                            <img src="https://i.imgur.com/8DVmjUz.png" alt="Druid" class="element-picture">
+                        <div class="element-info" id="druid-info">
+                            <img src="./assets/images/characters/druid.png" alt="Druid" class="element-picture">
 
                             <h3 class="element-title">Druid</h3>
 
@@ -114,8 +115,8 @@
                             </p>
                         </div>
                         
-                        <div class="element-info">
-                            <img src="https://i.imgur.com/3q8GHPj.png" alt="Knight" class="element-picture">
+                        <div class="element-info" id="knight-info">
+                            <img src="./assets/images/characters/knight.png" alt="Knight" class="element-picture">
 
                             <h3 class="element-title">Knight</h3>
 
@@ -127,8 +128,8 @@
                             </p>
                         </div>
                         
-                        <div class="element-info">
-                            <img src="https://i.imgur.com/50ynIKt.png" alt="Rogue" class="element-picture">
+                        <div class="element-info" id="rogue-info">
+                            <img src="./assets/images/characters/rogue.png" alt="Rogue" class="element-picture">
 
                             <h3 class="element-title">Rogue</h3>
 
@@ -140,8 +141,8 @@
                             </p>
                         </div>
                         
-                        <div class="element-info">
-                            <img src="https://i.imgur.com/YzLkND3.png" alt="Wizard" class="element-picture">
+                        <div class="element-info" id="wizard-info">
+                            <img src="./assets/images/characters/wizard.png" alt="Wizard" class="element-picture">
 
                             <h3 class="element-title">Wizard</h3>
 
@@ -156,319 +157,199 @@
                 </div>
             </div>
         </section>
-        
+
+        <section id="statues-section" class="mb-7">
+            <div class="main-title">
+                <h2>Statues</h2>
+            </div>
+
+            <div class="main-text mb-7">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis quibusdam
+                    fuga suscipit quaerat molestias qui delectus officia vero dolorem, error voluptatum pariatur assumenda
+                    ratione dignissimos fugit velit blanditiis. Explicabo.
+                </p>
+            </div>
+
+            <div class="content row">
+                <div class="col-9">
+                    <div class="element-info-list">
+                        <div class="element-info" id="berserker-statue-info">
+                            <img src="./assets/images/statues/berserker-statue.png" alt="Berserker's statue" class="element-picture">
+
+                            <h3 class="element-title">Berserker's</h3>
+
+                            <p class="element-description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, nihil velit a incidunt id consectetur
+                                dolor delectus quae est labore facilis? Animi quidem deleniti, officia cum tempora eos harum qui? Lorem
+                                ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                            </p>
+                        </div>
+                        
+                        <div class="element-info" id="engineer-statue-info">
+                            <img src="./assets/images/statues/engineer-statue.png" alt="Engineer's statue" class="element-picture">
+
+                            <h3 class="element-title">Engineer's</h3>
+
+                            <p class="element-description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, nihil velit a incidunt id consectetur
+                                dolor delectus quae est labore facilis? Animi quidem deleniti, officia cum tempora eos harum qui? Lorem
+                                ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                            </p>
+                        </div>
+                        
+                        <div class="element-info" id="paladin-statue-info">
+                            <img src="./assets/images/statues/paladin-statue.png" alt="Paladin's statue" class="element-picture">
+
+                            <h3 class="element-title">Paladin's</h3>
+
+                            <p class="element-description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, nihil velit a incidunt id consectetur
+                                dolor delectus quae est labore facilis? Animi quidem deleniti, officia cum tempora eos harum qui? Lorem
+                                ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                            </p>
+                        </div>
+                        
+                        <div class="element-info" id="wizard-statue-info">
+                            <img src="./assets/images/statues/wizard-statue.png" alt="Wizard's statue" class="element-picture">
+
+                            <h3 class="element-title">Wizard's</h3>
+
+                            <p class="element-description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, nihil velit a incidunt id consectetur
+                                dolor delectus quae est labore facilis? Animi quidem deleniti, officia cum tempora eos harum qui? Lorem
+                                ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-3 ml-5">
+
+                    <nav class="floating-nav">
+                        <h2 class="nav-heading js-scroll" data-scroll="statues-section">Statues</h2>
+
+                        <ul class="nav-list">
+                            <li class="nav-item js-scroll" data-scroll="berserker-statue-info">
+                                <a>Berserker's</a>
+                            </li>
+
+                            <li class="nav-item js-scroll" data-scroll="engineer-statue-info">
+                                <a>Engineer's</a>
+                            </li>
+                            
+                            <li class="nav-item js-scroll" data-scroll="paladin-statue-info">
+                                <a>Paladin's</a>
+                            </li>
+                            
+                            <li class="nav-item js-scroll" data-scroll="wizard-statue-info">
+                                <a>Wizard's</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="buffs-section">
+            <div class="main-title">
+                <h2>Buffs</h2>
+            </div>
+
+            <div class="main-text mb-7">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis quibusdam
+                    fuga suscipit quaerat molestias qui delectus officia vero dolorem, error voluptatum pariatur assumenda
+                    ratione dignissimos fugit velit blanditiis. Explicabo.
+                </p>
+            </div>
+
+            <div class="parallax-paladin-wizard py-6">
+                <div class="row -centralize-children mb-6">
+                    <div class="col-4">
+                        <div class="card-img-description">
+                            <img src="./assets/images/buffs/cooldown-buff.png" alt="cooldown buff">
+                            <p class="description">
+                                Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4">
+                        <div class="card-img-description">
+                            <img src="./assets/images/buffs/shield-blast-buff.png" alt="shield blast buff">
+                            <p class="description">
+                                Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4">
+                        <div class="card-img-description">
+                            <img src="./assets/images/buffs/maximum-health-buff.png" alt="maximum health buff">
+                            <p class="description">
+                                Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row -centralize-children">
+                    <div class="col-4">
+                        <div class="card-img-description">
+                            <img src="./assets/images/buffs/vampirism-buff.png" alt="vampirism buff">
+                            <p class="description">
+                                Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4">
+                        <div class="card-img-description">
+                            <img src="./assets/images/buffs/fire-resistance-buff.png" alt="fire resistance buff">
+                            <p class="description">
+                                Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4">
+                        <div class="card-img-description">
+                            <img src="./assets/images/buffs/no-extra-damage-buff.png" alt="no extra damage buff">
+                            <p class="description">
+                                Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-
-  <!-- Título "Estátuas" -->
-  <div class="container-fluid d-flex justify-content-center w-100 pt-5 pb-0 mb-0 mt-0" id="textEstatuas">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="jumbotron jumbotron-fluid bg-transparent mb-0 mt-0 pt-0 pb-0">
-          <div class="container">
-            <div class="d-flex justify-content-center mb-3">
-              <h1 class="display-4">Estátuas</h1>
-            </div>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis quibusdam fuga
-              suscipit quaerat molestias qui delectus officia vero dolorem, error voluptatum pariatur assumenda
-              ratione dignissimos fugit velit blanditiis. Explicabo.</p>
-          </div>
+    <footer>
+        <div class="social-media-contact">
+            <a href="https://github.com/brendobc" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="imgGithub">
+                    <path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"/>
+                </svg>
+            </a>
+    
+            <a href="https://www.linkedin.com/in/brendo-cliber/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="imgLinkedIn">
+                    <path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"/>
+                </svg>
+            </a>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- Fim do título "Estátuas" -->
 
-
-  <div class="container-fluid d-flex w-100 mb-5 mt-0">
-    <div class="row">
-      <div class="col-md-9 pl-3 pr-3 pt-5">
-
-        <!-- Informações - Estátua Berserker -->
-        <div class="container pt-5" id="tituloEstatuaBerserker">
-          <!-- Imagem Estátua Berserker -->
-          <div
-            style="content: url(https://i.imgur.com/CLRJSHM.png); float: left; alt: 'Foto Estátua Berserker'; width: 130px; margin-left: 3rem; margin-right: 3rem;">
-          </div>
-          <!-- Título Estátua Berserker -->
-          <h3 class="text-center mb-5">Estátua Berserker</h3>
-          <!-- Resumo Estátua Berserker -->
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, nihil velit a incidunt id consectetur
-            dolor delectus quae est labore facilis? Animi quidem deleniti, officia cum tempora eos harum qui? Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.</p>
-
-          <!-- Collapse com botão "ver detalhes" - Estátua Berserker -->
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="collapse multi-collapse" id="detalhesEstatuaBerserker">
-                  <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 d-flex justify-content-end">
-                <p>
-                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse"
-                    data-target="#detalhesEstatuaBerserker" aria-expanded="false"
-                    aria-controls="detalhesEstatuaBerserker">Ver detalhes</button>
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="page-owner-name">
+            Brendo Cliber
         </div>
-        <!-- Fim das informações Estátua Berserker -->
-
-        <hr class="pb-0 mb-0">
-
-        <!-- Informações - Estátua Engenheiro -->
-        <div class="container pt-5" id="tituloEstatuaEngenheiro">
-          <!-- Imagem Estátua Engenheiro -->
-          <div
-            style="content: url(https://i.imgur.com/AdiDiec.png); float: left; alt: 'Foto Estátua Engenheiro'; width: 130px; margin-left: 3rem; margin-right: 3rem;">
-          </div>
-          <!-- Título Estátua Engenheiro -->
-          <h3 class="text-center mb-5">Estátua Engenheiro</h3>
-          <!-- Resumo Estátua Engenheiro -->
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, nihil velit a incidunt id consectetur
-            dolor delectus quae est labore facilis? Animi quidem deleniti, officia cum tempora eos harum qui? Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.</p>
-
-          <!-- Collapse com botão "ver detalhes" - Estátua Engenheiro -->
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="collapse multi-collapse" id="detalhesEstatuaEngenheiro">
-                  <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 d-flex justify-content-end">
-                <p>
-                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse"
-                    data-target="#detalhesEstatuaEngenheiro" aria-expanded="false"
-                    aria-controls="detalhesEstatuaEngenheiro">Ver detalhes</button>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fim das informações Estátua Engenheiro -->
-
-        <hr class="pb-0 mb-0">
-
-        <!-- Informações - Estátua Feiticeiro -->
-        <div class="container pt-5" id="tituloEstatuaFeiticeiro">
-          <!-- Imagem Estátua Feiticeiro -->
-          <div
-            style="content: url(https://i.imgur.com/DSSTmQs.png); float: left; alt: 'Foto Estátua Feiticeiro'; width: 130px; margin-left: 3rem; margin-right: 3rem;">
-          </div>
-          <!-- Título Estátua Feiticeiro -->
-          <h3 class="text-center mb-5">Estátua Feiticeiro</h3>
-          <!-- Resumo Estátua Feiticeiro -->
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, nihil velit a incidunt id consectetur
-            dolor delectus quae est labore facilis? Animi quidem deleniti, officia cum tempora eos harum qui? Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.</p>
-
-          <!-- Collapse com botão "ver detalhes" - Estátua Feiticeiro -->
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="collapse multi-collapse" id="detalhesEstatuaFeiticeiro">
-                  <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 d-flex justify-content-end">
-                <p>
-                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse"
-                    data-target="#detalhesEstatuaFeiticeiro" aria-expanded="false"
-                    aria-controls="detalhesEstatuaFeiticeiro">Ver detalhes</button>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fim das informações Estátua Feiticeiro -->
-
-        <hr class="pb-0 mb-0">
-
-        <!-- Informações - Estátua Paladino -->
-        <div class="container pt-5" id="tituloEstatuaPaladino">
-          <!-- Imagem Estátua Paladino -->
-          <div
-            style="content: url(https://i.imgur.com/uiyXKhI.png); float: left; alt: 'Foto Estátua Paladino'; width: 130px; margin-left: 3rem; margin-right: 3rem;">
-          </div>
-          <!-- Título Estátua Paladino -->
-          <h3 class="text-center mb-5">Estátua Paladino</h3>
-          <!-- Resumo Estátua Paladino -->
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, nihil velit a incidunt id consectetur
-            dolor delectus quae est labore facilis? Animi quidem deleniti, officia cum tempora eos harum qui? Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.</p>
-
-          <!-- Collapse com botão "ver detalhes" - Estátua Paladino -->
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10">
-                <div class="collapse multi-collapse" id="detalhesEstatuaPaladino">
-                  <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 d-flex justify-content-end">
-                <p>
-                  <button class="btn btn-outline-primary" type="button" data-toggle="collapse"
-                    data-target="#detalhesEstatuaPaladino" aria-expanded="false"
-                    aria-controls="detalhesEstatuaPaladino">Ver detalhes</button>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fim das informações Estátua Paladino -->
-
-        <hr class="pb-0 mb-0">
-
-      </div>
-
-      <!-- Menu "grudento" -->
-      <div class="col-md-3 pl-2 pr-2 pt-5 pb-5">
-        <div class="container sticker pt-3 pb-3 pr-0 pl-0 font-weight-bold">
-          <div class="list-group">
-            <a href="#textEstatuas"
-              class="list-group-item list-group-item-action border border-dark border-bottom-0">Estátuas</a>
-
-            <ul class="list-group border border-dark rounded-bottom p-0">
-              <li class="list-group-item mr-0 ml-0 pl-0 pr-0 pb-0 pt-0 border rounded-bottom">
-                <a href="#tituloEstatuaBerserker"
-                  class="list-group-item list-group-item-action list-group-item-info">Berserker</a>
-                <a href="#tituloEstatuaEngenheiro"
-                  class="list-group-item list-group-item-action list-group-item-info">Engenheiro</a>
-                <a href="#tituloEstatuaFeiticeiro"
-                  class="list-group-item list-group-item-action list-group-item-info">Feiticeiro</a>
-                <a href="#tituloEstatuaPaladino"
-                  class="list-group-item list-group-item-action list-group-item-info">Paladino</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Fim do menu "grudento" -->
-
-    </div>
-  </div>
-
-  <div class="container w-100 mb-5 mt-0">
-    <!-- Título "Buffs" -->
-    <div class="container-fluid d-flex justify-content-center w-100 pt-5 pb-0 mb-0 mt-0" id="textBuffs">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="jumbotron jumbotron-fluid bg-transparent mb-0 mt-0 pt-0 pb-0">
-            <div class="container">
-              <div class="d-flex justify-content-center mb-3">
-                <h1 class="display-4">Buffs</h1>
-              </div>
-              <p class="lead" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis quibusdam fuga suscipit quaerat molestias qui delectus officia vero dolorem, error voluptatum pariatur assumenda ratione dignissimos fugit velit blanditiis. Explicabo.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Fim do título "Buffs" -->
-  <div style="background-image: url(https://i.imgur.com/fzzEhhj.jpg); min-height: 400px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;">
-    <div class="row w-100 mb-5">
-      <div class="col-md-4 d-flex justify-content-center">
-        <div class="card mt-5" style="width: 18rem;">
-          <img class="card-img-top rounded" src="https://i.imgur.com/5by728w.png" alt="Imagem de capa do card">
-          <div class="card-body">
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex justify-content-center">
-        <div class="card mt-5" style="width: 18rem;">
-          <img class="card-img-top rounded" src="https://i.imgur.com/19tQr12.png" alt="Imagem de capa do card">
-          <div class="card-body">
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-              do card.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex justify-content-center">
-        <div class="card mt-5" style="width: 18rem;">
-          <img class="card-img-top rounded" src="https://i.imgur.com/wAGVz8M.png" alt="Imagem de capa do card">
-          <div class="card-body">
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-              do card.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row w-100">
-      <div class="col-md-4 d-flex justify-content-center">
-        <div class="card mb-5" style="width: 18rem;">
-          <img class="card-img-top rounded" src="https://i.imgur.com/dK2vE6P.png" alt="Imagem de capa do card">
-          <div class="card-body">
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-              do card.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex justify-content-center">
-        <div class="card mb-5" style="width: 18rem;">
-          <img class="card-img-top rounded" src="https://i.imgur.com/sD5BEjT.png" alt="Imagem de capa do card">
-          <div class="card-body">
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-              do card.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex justify-content-center">
-        <div class="card mb-5" style="width: 18rem;">
-          <img class="card-img-top rounded" src="https://i.imgur.com/4tIqS5F.png" alt="Imagem de capa do card">
-          <div class="card-body">
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="page-footer pt-5 pb-3" style="background-color:#1a2e37">
-    <div class="row w-100">
-      <div class="col-md-12 d-flex justify-content-center">
-        <a class="pl-3 pr-3" href="https://www.linkedin.com/in/brendo-cliber/" target="_blank"><img src="https://i.imgur.com/fuWIvZY.png" id="imgLinkedin" alt="logo linkedin" style="width: 40px"></a>
-        <a class="pl-3 pr-3" href="https://github.com/brendobc" target="_blank"><img src="https://i.imgur.com/6pNv37e.png" id="imgGithub" alt="logo github" style="width: 40px"></a>
-      </div>
-    </div>
-    <div class="row w-100 d-flex justify-content-center mt-3" style="color: white;">
-      Direitos reservados
-    </div>
-  </footer>
-
-  <!-- JavaScript (Opcional) -->
-  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+    </footer>
 </body>
 
 </html>

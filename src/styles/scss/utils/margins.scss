@@ -1,7 +1,24 @@
+.py-6 {
+    padding-top: $spacing-6 !important;
+    padding-bottom: $spacing-6 !important;
+}
+
+.mb-5 {
+    margin-bottom: $spacing-5 !important;
+}
+
+.mb-6 {
+    margin-bottom: $spacing-6 !important;
+}
+
 .mb-7 {
     margin-bottom: $spacing-7 !important;
 }
 
 .mr-5 {
-    margin-right: $spacing-5;
+    margin-right: $spacing-5 !important;
+}
+
+.ml-5 {
+    margin-left: $spacing-5 !important;
 }
