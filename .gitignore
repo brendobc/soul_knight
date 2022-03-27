@@ -1,0 +1,4 @@
+/node_modules
+/package-lock.json
+
+src/assets/styles/css/index.css.map

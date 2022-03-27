@@ -1,0 +1,27 @@
+{
+  "name": "brendobc.github.io",
+  "version": "1.0.0",
+  "description": "Page about soul knight",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass-dev": "sass --watch --update --style=compressed src/styles/scss/index.scss:src/assets/styles/css/index.css",
+    "build-sass-prod": "sass --style=compressed src/styles/scss/index.scss:src/assets/styles/css/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendobc/brendobc.github.io.git"
+  },
+  "keywords": [
+    "soulKnight"
+  ],
+  "author": "Brendo Cliber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brendobc/brendobc.github.io/issues"
+  },
+  "homepage": "https://github.com/brendobc/brendobc.github.io#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
