@@ -17,8 +17,8 @@ Em seguida, execute também:
 npm start
 ```
 
-Você verá algo assim no terminal:
-![exemplo http server](src/assets/images/readme/exemplo_http_server.png)
+Você verá algo assim no terminal: <br>
+![exemplo http server](src/assets/images/readme/exemplo_http_server.png) <br>
 É possível acessar o site por qualquer uma das URLs
 
 E tudo pronto! Para interromper a execução, basta pressionar ```Ctrl + C``` no terminal.
