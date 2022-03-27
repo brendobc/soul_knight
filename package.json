@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-sass-dev": "sass --watch --update --style=compressed src/styles/scss/index.scss:src/assets/styles/css/index.css",
-    "build-sass-prod": "sass --style=compressed src/styles/scss/index.scss:src/assets/styles/css/index.css"
+    "build-sass-prod": "sass --style=compressed src/styles/scss/index.scss:src/assets/styles/css/index.css",
+    "start": "http-server"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/brendobc/brendobc.github.io#readme",
   "dependencies": {
+    "http-server": "^14.1.0",
     "sass": "^1.49.9"
   }
 }
