@@ -9,10 +9,15 @@ O projeto já está disponível online. Basta visitar a url https://brendobc.git
 
 Mas caso queira rodar localmente, execute o seguinte comando:
 ```
-npm run build-sass-prod
+npm install
 ```
 
 Em seguida, execute também:
+```
+npm run build-sass-prod
+```
+
+E por fim, execute:
 ```
 npm start
 ```
